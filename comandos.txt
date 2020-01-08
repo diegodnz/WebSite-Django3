@@ -33,9 +33,12 @@ git init
 Mostrar histórico do repositório
 git status
 
-Fazer um comit
+Fazer um comit:
 git add .
 git commit -m 'nome do commit'
 - GitHub:
     git remote add origin URL
 git push origin master (push -u -> primeira vez)
+
+Listar branch:
+git branch -v
