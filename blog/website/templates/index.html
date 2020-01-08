@@ -1,0 +1,12 @@
+<h1>Blog</h1>
+
+{{ diego }}
+<ul>
+{% for item in numeros%}
+    {% if item == 2 %}
+        <li><b>{{ item }}</b></li>
+    {% else %}
+        <li>{{ item }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
