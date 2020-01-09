@@ -1,6 +1,6 @@
 <h1>Blog</h1>
 
-{{ diego }}
+<b>{{ diego }}</b>
 <ul>
 {% for item in numeros%}
     {% if item == 2 %}
@@ -10,3 +10,10 @@
     {% endif %}
 {% endfor %}
 </ul>
+
+
+{% for post in posts%}
+    <h1><b>{{ post.title }}</b></h1>
+    <h2>{{ post.subtitle }}</h2>
+    <h3>{{ post.content }}</h3>
+{% endfor %}
