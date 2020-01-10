@@ -18,10 +18,13 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
-    def title_subtitle(self):
+    def titleSubtitle(self):
         return self.title + ' - ' + self.content
+
+    def getCategoryLabel(self):
+        return self.get_category_display()
 
     deleted = models.BooleanField(default=True)
 
-    title_subtitle.admin_order_field = 'title'
+    titleSubtitle.admin_order_field = 'title'
 
