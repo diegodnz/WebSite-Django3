@@ -14,6 +14,7 @@ class Post(models.Model):
         choices = Categories.choices,
         default = 'GR'
     )
+    image = models.ImageField(upload_to='posts', null=True, blank=True)
 
     def __str__(self):
         return self.title
