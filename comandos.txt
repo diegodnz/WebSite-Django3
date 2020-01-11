@@ -24,8 +24,12 @@ python manage.py createsuperuser
 Criação de app:
 - Criar app: python manage.py startapp nameApp
 - Registrar em installed apps
-- Criar classe model -> Class nome(models.Model)
-- Adicionar em admin.py -> admin.site.register(nomeModel)
+
+Criar classe model:
+Class nome(models.Model)
+
+Adicionar model em admin.py:
+admin.site.register(nomeModel)
 
 Criar git repositório:
 git init
@@ -42,3 +46,9 @@ git push origin master (push -u -> primeira vez)
 
 Listar branch:
 git branch -v
+
+Criar requirements:
+pip freeze > requirements.txt
+
+Remover do git:
+git rm --cached name
