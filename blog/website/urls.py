@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import helloBlog
-from .views import postDetail
+from .views import homeBlog, postDetail, saveForm
 
 urlpatterns = [
-    path('', helloBlog, name = 'homeBlog'),
+    path('', homeBlog, name = 'home'),
     path('post/<int:id>/', postDetail, name = 'postDetail'),
+    path('200/', saveForm, name = 'saveForm')
 ]
